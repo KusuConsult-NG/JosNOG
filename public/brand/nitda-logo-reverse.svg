@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-label="NITDA — National Information Technology Development Agency">
+  <title>NITDA — National Information Technology Development Agency (reverse)</title>
+  <defs><clipPath id="nr-clip"><circle cx="64" cy="64" r="48"/></clipPath></defs>
+  <circle cx="64" cy="64" r="60" fill="#FFFFFF"/>
+  <circle cx="64" cy="64" r="53" fill="none" stroke="#E2A32B" stroke-width="2.5"/>
+  <g clip-path="url(#nr-clip)" fill="none" stroke="#1B7339" stroke-width="2.2" opacity=".5">
+    <circle cx="64" cy="64" r="48"/>
+    <ellipse cx="64" cy="64" rx="20" ry="48"/>
+    <ellipse cx="64" cy="64" rx="38" ry="48"/>
+    <path d="M16 48h96M16 64h96M16 80h96"/>
+  </g>
+  <g clip-path="url(#nr-clip)">
+    <path d="M38 86 58 58l14 14 20-30" fill="none" stroke="#1B7339" stroke-width="7"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="38" cy="86" r="6.5" fill="#E2A32B"/>
+    <circle cx="58" cy="58" r="6.5" fill="#156030"/>
+    <circle cx="72" cy="72" r="6.5" fill="#156030"/>
+    <circle cx="92" cy="42" r="7.5" fill="#E2A32B"/>
+  </g>
+  <text x="146" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="46"
+        font-weight="700" letter-spacing="4" fill="#FFFFFF">NITDA</text>
+  <text x="148" y="88" font-family="Arial, Helvetica, sans-serif" font-size="13.5"
+        letter-spacing=".6" fill="#D2EDDC">National Information Technology</text>
+  <text x="148" y="106" font-family="Arial, Helvetica, sans-serif" font-size="13.5"
+        letter-spacing=".6" fill="#D2EDDC">Development Agency</text>
+</svg>

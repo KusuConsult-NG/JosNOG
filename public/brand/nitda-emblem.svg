@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="NITDA emblem">
+  <title>NITDA emblem</title>
+  <defs>
+    <linearGradient id="ne-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B7339"/>
+      <stop offset="1" stop-color="#0B381C"/>
+    </linearGradient>
+    <clipPath id="ne-clip"><circle cx="64" cy="64" r="48"/></clipPath>
+  </defs>
+  <circle cx="64" cy="64" r="60" fill="url(#ne-g)"/>
+  <circle cx="64" cy="64" r="53" fill="none" stroke="#E2A32B" stroke-width="2.5"/>
+  <g clip-path="url(#ne-clip)" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity=".55">
+    <circle cx="64" cy="64" r="48"/>
+    <ellipse cx="64" cy="64" rx="20" ry="48"/>
+    <ellipse cx="64" cy="64" rx="38" ry="48"/>
+    <path d="M16 48h96M16 64h96M16 80h96"/>
+  </g>
+  <g clip-path="url(#ne-clip)">
+    <path d="M38 86 58 58l14 14 20-30" fill="none" stroke="#FFFFFF" stroke-width="7"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="38" cy="86" r="6.5" fill="#E2A32B"/>
+    <circle cx="58" cy="58" r="6.5" fill="#FFFFFF"/>
+    <circle cx="72" cy="72" r="6.5" fill="#FFFFFF"/>
+    <circle cx="92" cy="42" r="7.5" fill="#E2A32B"/>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* No network font fetch at build time — a resilient system stack keeps the
+     platform renderable inside NITDA's air-gapped staging environment. */
+  --font-sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --nitda-green: #1B7339;
+  --nitda-green-deep: #104C26;
+  --nitda-gold: #E2A32B;
+}
+
+* { -webkit-font-smoothing: antialiased; }
+
+body {
+  background: #F7F9F8;
+  color: #141A17;
+  font-family: var(--font-sans);
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-ink-200/80 bg-white shadow-card;
+  }
+  .card-pad { @apply p-5; }
+
+  .label {
+    @apply block text-[12.5px] font-semibold uppercase tracking-wide text-ink-600;
+  }
+
+  .field {
+    @apply block w-full rounded-lg border border-ink-300 bg-white px-3.5 py-2.5 text-[15px]
+           text-ink-900 placeholder:text-ink-400 outline-none transition
+           focus:border-nitda-500 focus:ring-4 focus:ring-nitda-500/15;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm
+           font-semibold transition focus-visible:outline-none focus-visible:ring-4
+           disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-primary {
+    @apply btn bg-nitda-500 text-white hover:bg-nitda-600 focus-visible:ring-nitda-500/25;
+  }
+  .btn-ghost {
+    @apply btn border border-ink-300 bg-white text-ink-700 hover:bg-ink-50 focus-visible:ring-ink-300/40;
+  }
+  .btn-gold {
+    @apply btn bg-gold-500 text-ink-900 hover:bg-gold-600 focus-visible:ring-gold-500/30;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11.5px] font-semibold;
+  }
+
+  .stat-num { @apply font-semibold tabular-nums tracking-tight text-ink-900; }
+
+  .link { @apply font-semibold text-nitda-600 underline-offset-2 hover:underline; }
+
+  /* Green authority band used at the top of every NITDA-branded surface */
+  .gov-band {
+    background-image: linear-gradient(90deg, #104C26 0%, #1B7339 45%, #00A859 100%);
+  }
+}
+
+/* Thin, unobtrusive scrollbars inside dashboard panes */
+.scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: #DCE3E0; border-radius: 99px; }
+.scroll-thin::-webkit-scrollbar-track { background: transparent; }
